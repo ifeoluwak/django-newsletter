@@ -13,7 +13,7 @@ def validate_email_nouser(email):
         # Check whether we should be subscribed to as a user
         User = get_user_model()
 
-        if User.objects.filter(email__exact=email).exists():
+        if User.objects.filter(email__iexact=email).exists():
             raise ValidationError(_(
                 "The e-mail address '%(email)s' belongs to a user with an "
                 "account on this site. Please log in as that user "
