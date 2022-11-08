@@ -10,6 +10,8 @@ Changes
 - Drop support for Django 3.0
 - Add support for Django 3.2
 - Add support for Python 3.10
+- Remove hard dependency on SITE_ID (#266)
+- ...
 
 0.9.1 (18-05-2020)
 ------------------
